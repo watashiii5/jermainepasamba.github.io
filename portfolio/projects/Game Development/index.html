@@ -66,17 +66,11 @@
     .itch-link a:hover {
       background-color: #444;
     }
-
-    /* Navigation Buttons */
-    .nav-buttons {
-      position: fixed;
+/* Home Button */
+    .home-button {
+      position: absolute;
       top: 20px;
       left: 20px;
-      display: flex;
-      gap: 10px;
-    }
-
-    .nav-buttons a {
       background-color: #333;
       color: #f0f0f0;
       padding: 10px 20px;
@@ -86,18 +80,33 @@
       border: 1px solid #555;
     }
 
-    .nav-buttons a:hover {
+    .home-button:hover {
       background-color: #444;
     }
+
+    /* Back Button */
+    .back-button {
+      display: block;
+      width: fit-content;
+      margin: 40px auto 0 auto;
+      background-color: #333;
+      color: #f0f0f0;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      border: 1px solid #555;
+    }
+
+    .back-button:hover {
+      background-color: #444;
   </style>
 </head>
 <body>
 
   <!-- Home & Back Buttons -->
-  <div class="nav-buttons">
-    <a href="javascript:history.back()">🏠 Home</a>
-    <a href="javascript:history.back()">🔙 Back</a>
-  </div>
+   <!-- Home Button -->
+  <a href="index.html" class="home-button">🏠 Home</a>
 
   <div class="container">
     <h1>Lainfern – A Unity Adventure Game</h1>
@@ -124,9 +133,9 @@
     <div class="note">
       ⚠️ This game is currently under development. There may be bugs and missing features. Feedback and future improvements are welcome!
     </div>
-      <div class="nav-buttons">
-     <a href="javascript:history.back()">🔙 Back</a></div>
-  </div>
+      
+  <!-- Back Button -->
+  <a href="index.html" class="back-button">🔙 Back</a>
 
 </body>
 </html>
