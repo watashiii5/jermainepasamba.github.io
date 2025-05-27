@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>POS System Showcase</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      background-color: #8DB600; /* Apple green */
+      font-family: Arial, sans-serif;
+      color: #fff;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      background-color: rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      border-radius: 12px;
+    }
+
+    h1, p {
+      text-align: center;
+    }
+
+    .image-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 15px;
+      margin: 20px 0;
+    }
+
+    .image-grid img {
+      width: 100%;
+      border-radius: 10px;
+      border: 2px solid white;
+    }
+
+    .pdf-container {
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    .pdf-container iframe {
+      width: 100%;
+      height: 600px;
+      border: none;
+      border-radius: 10px;
+    }
+
+    .fallback {
+      margin-top: 10px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>POS System Project</h1>
+    <p>Here's how our Point of Sale system works in action, along with screenshots and documentation.</p>
+
+    <div class="image-grid">
+      <img src="1.png" alt="POS Screenshot 1">
+      <img src="2.png" alt="POS Screenshot 2">
+      <img src="3.png" alt="POS Screenshot 3">
+      <img src="4.png" alt="POS Screenshot 4">
+      <img src="5.png" alt="POS Screenshot 5">
+      <img src="6.png" alt="POS Screenshot 6">
+    </div>
+
+    <div class="pdf-container">
+      <h2>Project Documentation</h2>
+      <iframe src="POS Project.pdf"></iframe>
+      <div class="fallback">
+        <p>If the PDF does not load, <a href="POS Project.pdf" target="_blank" style="color: #ff0;">click here to view it manually</a>.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
