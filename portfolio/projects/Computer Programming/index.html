@@ -10,11 +10,12 @@
       background-color: #8DB600; /* Apple green */
       font-family: Arial, sans-serif;
       color: #fff;
+      position: relative;
     }
 
     .container {
       max-width: 1000px;
-      margin: auto;
+      margin: 60px auto 40px auto; /* extra top margin for Home button */
       background-color: rgba(0, 0, 0, 0.1);
       padding: 20px;
       border-radius: 12px;
@@ -53,9 +54,47 @@
       margin-top: 10px;
       color: #333;
     }
+
+    /* Home Button */
+    .home-button {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      background-color: white;
+      color: #8DB600;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .home-button:hover {
+      background-color: #f0f0f0;
+    }
+
+    /* Back Button */
+    .back-button {
+      display: block;
+      width: fit-content;
+      margin: 40px auto 0 auto;
+      background-color: white;
+      color: #8DB600;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .back-button:hover {
+      background-color: #f0f0f0;
+    }
   </style>
 </head>
 <body>
+
+  <!-- Home Button -->
+  <a href="index.html" class="home-button">🏠 Home</a>
+
   <div class="container">
     <h1>POS System Project</h1>
     <p>Here's how our Point of Sale system works in action, along with screenshots and documentation.</p>
@@ -77,5 +116,9 @@
       </div>
     </div>
   </div>
+
+  <!-- Back Button -->
+  <a href="index.html" class="back-button">🔙 Back</a>
+
 </body>
 </html>
