@@ -2,15 +2,82 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Jermaine Pasamba | Portfolio</title>
+  <title>Jermaine Pasamba | Student Portfolio</title>
+  <style type="text/css">
+    body {
+      margin: 0;
+      padding: 20px;
+      background: url('path/to/your/background-image.png') no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'Arial', sans-serif;
+      color: #fff;
+    }
+
+    h1, h2 {
+      text-align: center;
+      color: #ffcc00;
+    }
+
+    p {
+      text-align: center;
+      font-size: 1.2em;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+      text-align: center;
+    }
+
+    li {
+      margin: 10px 0;
+    }
+
+    a {
+      text-decoration: none;
+      color: #ffcc00;
+      font-weight: bold;
+      position: relative;
+    }
+
+    a::before {
+      content: '🔗'; /* You can change this to any icon you prefer */
+      position: absolute;
+      left: -20px;
+      font-size: 1.5em;
+    }
+
+    .profile-pic {
+      width: 2in; /* 2 inches */
+      height: 2in; /* 2 inches */
+      border-radius: 50%;
+      background-color: #ccc; /* Placeholder color */
+      margin: 0 auto;
+      display: block;
+      margin-bottom: 20px;
+    }
+
+    .contact-info {
+      text-align: center;
+      margin-top: 20px;
+    }
+  </style>
 </head>
 <body>
-  <h1>Jermaine C. Pasamba</h1>
-  <p>BS Mathematics with Specialization in Computer Science, Bulacan State University</p>
+  <div class="profile-pic"></div> <!-- Placeholder for your picture -->
+  <h1>Hello! I'm Jermaine Pasamba</h1>
+  <p>BS Math with Specialization in Computer Science, BulSU</p>
+
   <h2>Projects</h2>
   <ul>
-    <li><a href="projects/FishingGame/index.html">2D Fishing Game (Unity)</a></li>
-    <li><a href="projects/StudentSystem/index.html">Student Record System (Java)</a></li>
+    <li><a href="projects/FishingGame/">🎣 2D Fishing Game (Unity)</a></li>
+    <li><a href="projects/StudentSystem/">📚 Student Record System (Java)</a></li>
   </ul>
+
+  <h2>Contact</h2>
+  <div class="contact-info">
+    <p>Email: jermaine.pasamba@gmail.com</p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/jermaine-pasamba-2b9256355/">My LinkedIn</a></p>
+  </div>
 </body>
 </html>
