@@ -4,17 +4,18 @@
   <meta charset="UTF-8" />
   <title>Canvas Design Projects</title>
   <style>
-    body {
+    html, body {
       margin: 0;
-      padding: 20px;
+      padding: 0;
       background-color: #121212;
       font-family: Arial, sans-serif;
       color: #f0f0f0;
+      height: 100%;
     }
 
     .container {
-      max-width: 1000px;
-      margin: 60px auto;
+      max-width: 1200px;
+      margin: 80px auto 40px auto;
       background-color: rgba(255, 255, 255, 0.05);
       padding: 20px;
       border-radius: 12px;
@@ -25,16 +26,16 @@
       text-align: center;
     }
 
-    .pdf-section {
-      margin-top: 40px;
-    }
-
     iframe {
       width: 100%;
-      height: 600px;
+      height: 90vh;
       border: none;
       border-radius: 10px;
       margin-top: 10px;
+    }
+
+    .pdf-section {
+      margin-top: 40px;
     }
 
     .fallback {
@@ -52,35 +53,39 @@
     a.fallback-link:hover {
       text-decoration: underline;
     }
+
+    /* Navigation Buttons */
+    .nav-buttons {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      display: flex;
+      gap: 10px;
+    }
+
+    .nav-buttons a {
+      background-color: #333;
+      color: #f0f0f0;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      border: 1px solid #555;
+    }
+
+    .nav-buttons a:hover {
+      background-color: #444;
+    }
   </style>
 </head>
 <body>
 
-  <div class="container">
-    <h1>Canvas Design Projects</h1>
-    <p>These works were designed using Canva as part of our design exploration projects.</p>
-
-    <!-- Steam Poster Section -->
-    <div class="pdf-section">
-      <h2>🎨 Steam Poster Redesign</h2>
-      <p>We recreated the Steam logo from scratch and designed a modern-style poster inspired by the original branding.</p>
-      <iframe src="Sample Steam Poster.pdf"></iframe>
-      <div class="fallback">
-        <p>If the PDF doesn't load, <a href="Sample Steam Poster.pdf" target="_blank" class="fallback-link">click here to view it manually</a>.</p>
-      </div>
-    </div>
-
-    <!-- Storybook Section -->
-    <div class="pdf-section">
-      <h2>📖 Storybook Design</h2>
-      <p>This project involved designing a storybook based on real authors’ content. We focused on layout, theme, and visual storytelling.</p>
-      <iframe src="story book (Pasamba, Ventura).pdf"></iframe>
-      <div class="fallback">
-        <p>If the PDF doesn't load, <a href="story book (Pasamba, Ventura).pdf" target="_blank" class="fallback-link">click here to view it manually</a>.</p>
-      </div>
-    </div>
-
+  <!-- Home & Back Buttons -->
+  <div class="nav-buttons">
+    <a href="javascript:history.back()">🏠 Home</a>
+    <a href="javascript:history.back()">🔙 Back</a>
   </div>
 
-</body>
-</html>
+  <div class="container">
+    <h1>Canvas Design Projects</h1>
+    <p>These creative works were developed using Canva as part of our design coursew
